@@ -4,6 +4,6 @@ def sum_digits_in_integer(integer):
     if integer == 0:
         return 0
     else:
-        return first_remainder + sum_digits_in_integer(int(integer/10))
+        return int(first_remainder) + sum_digits_in_integer(int(integer/10))
     
 print(sum_digits_in_integer(129))
